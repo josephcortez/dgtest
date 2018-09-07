@@ -1,11 +1,11 @@
 <html>
-<head>
 <script type="text/javascript" src="js/main.js"></script>
-</head>
-<body>
-  <span style="display:none">
-    <img id="id1" src="img/491.jpg" onload="javascript:showImage();">
-  </span>
-  HI!
+<body onload="start();updateScore();">
+<img id="theImage" style="border-style: solid; border-width:1px;">
+<p>
+  <p id="score" onload="">Score:</p>
+  <input type="text" id="textBox" value=""><br><br>
+  <input type="button" id="theButton" value="click me!" onclick="check()"><br><br>
+</p>
 </body>
 </html>
