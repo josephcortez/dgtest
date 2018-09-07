@@ -48,7 +48,7 @@ function check() {
     }
     usedNumbers.push(roleNumber);
     var textInput = document.getElementById('textBox').value;
-    //document.getElementById('textBox').value = roleNumber + " " + score + " " + textInput;
+    document.getElementById('score').innerHTML = roleNumber + " " + score + " " + textInput;
     if (roleNumber == 491) {
       if (textInput == "Kaylee") {
 
@@ -278,7 +278,6 @@ function check() {
       if(textInput == "Rayane"){
         score += 1;
         updateScore();
-        document.getElementById('textBox').value = "damn";
       }
       pictureChange();
     }
@@ -646,6 +645,8 @@ function check() {
       }
       pictureChange();
     }
+  }else{
+    document.innerHTML = "You've finished the test! You received a " + score + " out of 85!\nIf you wish to play again, reload the page.";
   }
   document.getElementById('textBox').value = "";
 }
