@@ -112,7 +112,7 @@ function start(){
   random();
   document.getElementById('theImage').src = "img/" + roleNumber + ".jpg";
   document.getElementById("score").textContent = "Score: " + score + ", Role Number: " + roleNumber + ", Members checked: " + (usedNames.length - 1);
-  document.getElementById("score2").innerHTML = usedNames.toString();
+  //document.getElementById("score2").innerHTML = usedNames.toString();
 }
 
 function random(){
@@ -130,7 +130,7 @@ function check(){
   }
   random();
   document.getElementById("score").textContent = "Score: " + score + ", Role Number: " + roleNumber + ", Members checked: " + (usedNames.length - 1);
-  document.getElementById("score2").innerHTML = usedNames.toString();
+  //document.getElementById("score2").innerHTML = usedNames.toString();
   document.getElementById("textBox").value = "";
   document.getElementById('theImage').src = "img/" + roleNumber + ".jpg";
 }
