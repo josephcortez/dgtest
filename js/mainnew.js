@@ -102,6 +102,7 @@ var roleNames = [
   "Farah",
   "Meredith"
 ];
+var prevName = "";
 var usedNames = [];
 var score = 0;
 var randomNumber = 0;
@@ -125,8 +126,12 @@ function random(){
 }
 
 function check(){
+  prevName = roleName;
   if(document.getElementById("textBox").value == roleName){
     score += 1;
+    document.getElementById("score2").textContent = "";
+  }else{
+    document.getElementById("score2").textContent = "INCORRECT: That was " + prevName + ".";
   }
   random();
   document.getElementById("score").textContent = "Score: " + score + ", Role Number: " + roleNumber + ", Members checked: " + (usedNames.length - 1);
